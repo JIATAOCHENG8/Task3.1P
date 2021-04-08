@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".quizActivity1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="1/5"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>>
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="20"
+            android:progressDrawable="@drawable/progress_drawable" />
+    </LinearLayout>
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Android question title:"
+        android:textSize="26sp"
+        android:textStyle="bold"></TextView>>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine"
+        android:text="Question details go here: what's the English word for 1?"
+        android:textSize="24sp"></TextView>
+
+    <Button
+        android:id="@+id/buttonOne"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_drawable"
+        android:text="one"
+        android:onClick="oneClick"
+        android:textSize="20dp"></Button>>
+
+    <Button
+        android:id="@+id/buttonTwo"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_drawable"
+        android:text="Two"
+        android:textSize="20dp"></Button>>
+
+    <Button
+        android:id="@+id/buttonThree"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_drawable"
+        android:text="three"
+        android:textSize="20dp"></Button>>
+
+    <Button
+        android:id="@+id/buttonSub"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_drawable"
+        android:backgroundTint="#DCC9C9"
+        android:text="Next"
+        android:textSize="20dp"
+        android:onClick="nextClick">
+
+    </Button>>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

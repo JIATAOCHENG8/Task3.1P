@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".quizActivity1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="5/5"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>>
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/progress_drawable" />
+    </LinearLayout>
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Android question title:"
+        android:textSize="26sp"
+        android:textStyle="bold"></TextView>>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine"
+        android:text="Question details go here: which of the following is not a fruit ?"
+        android:textSize="24sp"></TextView>
+
+    <Button
+        android:id="@+id/buttonOrange"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_drawable"
+        android:text="Orange"
+        android:textSize="20dp"></Button>>
+
+    <Button
+        android:id="@+id/buttonPeach"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_drawable"
+        android:text="peach"
+        android:textSize="20dp"></Button>>
+
+    <Button
+        android:id="@+id/buttonCup"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_drawable"
+        android:text="cup"
+        android:onClick="oneClick"
+        android:textSize="20sp"></Button>>
+
+    <Button
+        android:id="@+id/buttonSub"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_drawable"
+        android:backgroundTint="#DCC9C9"
+        android:text="submit"
+        android:textSize="20dp"
+        android:onClick="nextClick">
+
+    </Button>>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".quizActivityGrade">
+
+    <TextView
+        android:id="@+id/gradeTextView"
+        android:layout_width="369dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="140dp"
+        android:layout_height="46dp"
+        android:text="Your Score:"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <Button
+        android:id="@+id/buttonNewQuiz"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_drawable"
+        android:backgroundTint="#DCC9C9"
+        android:text="take new quiz"
+        android:onClick="newQuizClick"
+        android:textSize="20dp"></Button>>
+    <Button
+        android:id="@+id/buttonFinish"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_drawable"
+        android:backgroundTint="#DCC9C9"
+        android:text="finish"
+        android:onClick="finishClick"
+        android:textSize="20dp">
+    </Button>>
+</androidx.appcompat.widget.LinearLayoutCompat>
